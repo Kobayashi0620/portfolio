@@ -1,6 +1,6 @@
 const shareData = {
-    title: "菅叶和 -KanKan- | FAN SITE",
-    text: "※ファンサイトです。\n俳協 所属タレント · 菅 叶和（かん かんな）/Kanna Kanの最新情報をお届けするファンサイトです。",
+    title: "こばやし -Kobayashi- | Portfolio",
+    text: "Web制作、システム開発、自動化など、Webに関する幅広いサービスを提供しております。お客様のご要望を丁寧にヒアリングし、最適なソリューションをご提案いたします。",
     url: "", //TODOリンク可変
 };
 
