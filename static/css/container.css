@@ -1,0 +1,670 @@
+@charset "utf-8";
+
+/* Noto Sans Japanese */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* Hannari */
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+
+/* Black Ops One */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* ▼common▼ */
+.areaHead {
+    margin: 40px 0;
+}
+
+.englishTitle {
+    font-family: "Black Ops One", system-ui;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.japaneseTitle {
+    font-family: "Hannari", serif;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+
+.areaLink {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    border-bottom: 1px solid;
+}
+
+/* ▲common▲ */
+
+/* ▼loading▼ */
+#splash {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+/* Loadingバー中央配置*/
+#splash_bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    border: solid;
+}
+
+/* ▲loading▲ */
+
+/* ▼main▼ */
+main {
+    width: 100%;
+    padding: 0 0 0 200px;
+}
+
+.topArea {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: solid;
+}
+
+.topArea video {
+    /* height: 850px; */
+    width: 33%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.overlayTitle {
+    font-family: "Black Ops One", system-ui;
+    font-size: 150px;
+    color: #fff;
+}
+
+.overlayTitle h2 {
+    position: absolute;
+    bottom: 200px;
+    left: 25px;
+    text-shadow: 5px 5px #000;
+}
+
+.overlayTitle h3 {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    text-shadow: 5px 5px #000;
+}
+
+.worksArea {
+    border-bottom: solid;
+}
+
+.worksContainar {
+    padding: 0 50px;
+    margin: 0 0 40px 0;
+}
+
+.worksSliderTop {
+    margin: 0 0 10px 0;
+}
+
+.worksSliderTop li {
+    width: 100px;
+    min-height: 350px;
+    border: solid;
+}
+
+.worksSliderTop img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    padding: 5px;
+}
+
+.worksSliderTop .slick-slide {
+    margin: 0 10px;
+}
+
+.worksSliderBottom {
+    margin: 10px 0 40px 0;
+}
+
+.worksSliderBottom li {
+    width: 100px;
+    height: 350px;
+    border: solid;
+}
+
+.worksSliderBottom img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.worksSliderBottom .slick-slide {
+    margin: 0 10px;
+}
+
+.worksInfo {
+    padding: 0 0 5px 0;
+}
+
+.worksTitle {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.worksDescription {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+
+.worksTag {
+    display: flex;
+    justify-content: center;
+}
+
+.worksTag p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.aboutArea {
+    border-bottom: solid;
+}
+
+.aboutContainar {
+    padding: 0 50px;
+    margin: 0 0 40px 0;
+}
+
+.aboutImage {
+    border-bottom: solid;
+    padding: 0 0 10px 0;
+}
+
+.clickSlide {
+    position: relative;
+    z-index: 1;
+}
+
+.clickSlide img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    cursor: pointer;
+    outline: none;
+    border-top: solid #000;
+    border-right: solid #000;
+    height: 25px;
+    width: 25px;
+}
+
+.slick-prev {
+    left: 2.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    right: 2.5%;
+    transform: rotate(45deg);
+}
+
+.aboutMe {
+    border-bottom: solid;
+    margin: 40px 0 0 0;
+    padding: 0 0 40px 0;
+}
+
+.aboutMe p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+}
+
+.aboutBlock {
+    margin: 40px 0 0 0;
+}
+
+.aboutWrapper {
+    display: flex;
+}
+
+.aboutIntroduction {
+    width: 40%;
+    padding: 0 20px 0 0;
+}
+
+.aboutIntroduction ul {
+    border-bottom: solid;
+    padding: 0 0 40px 0;
+}
+
+.aboutIntroduction li {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    margin: 0 0 5px 0;
+}
+
+.borderBottom {
+    width: 100%;
+    border-bottom: solid;
+}
+
+.introductionTitle {
+    padding: 0 10px 0 0;
+}
+
+.introductionDescription {
+    padding: 0 0 0 10px;
+}
+
+.profileSNS {
+    margin: 40px 0 0 0;
+}
+
+.profileSNS i {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.aboutBiography {
+    width: 60%;
+}
+
+.yearColumn {
+    width: 30%;
+}
+
+.historyColumn {
+    width: 70%;
+}
+
+.aboutBiography ul {
+    height: 350px;
+    overflow: hidden scroll;
+    border-left: solid;
+    padding: 0 0 0 20px;
+}
+
+.aboutBiography li {
+    display: flex;
+    border: solid;
+    padding: 5px;
+    margin: 0 0 5px 0;
+}
+
+.skillsArea {
+    border-bottom: solid;
+}
+
+.skkillsContainer {
+    padding: 0 50px;
+    margin: 0 0 40px 0;
+}
+
+.skillLists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skillList {
+    width: 33%;
+    padding: 30px;
+}
+
+
+.skillTitle {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.skillDescript {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    margin: 0 0 0 20px;
+}
+
+.contactArea {
+    border-bottom: solid;
+}
+
+.flashMessage{
+    margin: 10px;
+}
+
+.successFlashMessage {
+    background-color: #D4EDDA;
+    border: solid #C3E6CB;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.successFlashMessage p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    color: #155724;
+}
+
+.failureFlashMessage {
+    background-color: #F8D7DA;
+    border: solid #F5C6CB;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.failureFlashMessage {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    color: #721C24;
+}
+
+.contactContainer {
+    padding: 0 50px;
+    margin: 0 0 40px 0;
+}
+
+.must {
+    font-size: 10px;
+    font-weight: 600;
+    color: #ff0000;
+    margin: 0 0 0 10px;
+}
+
+.contactForm label {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+}
+
+.contactForm input {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    margin: 10px 0 20px 0;
+}
+
+.contactForm textarea {
+    margin: 10px 0 20px 0;
+}
+
+.contactName,
+.contactMail,
+.contactSubmit {
+    width: 100%;
+    height: 30px;
+    outline: solid;
+}
+
+.contactSubmit{
+    text-align: center;
+}
+
+.contactContent {
+    width: 100%;
+    height: 300px;
+    outline: solid;
+}
+
+.privacyLink {
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.privacyUnderline {
+    text-decoration: underline;
+}
+
+#privacyAgree,
+.privacyAgree {
+    margin: 0 20px 0 0;
+}
+
+.privacyAgreeBlock {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.mordalAreaHead {
+    margin: 0 0 40px 0;
+}
+
+.privacyLists p {
+    margin: 0 0 20px 0;
+}
+
+.privacyList {
+    font-weight: 700;
+    list-style: decimal;
+    margin: 0 0 0 20px;
+}
+
+.privacyList li {
+    margin: 0 0 20px 0;
+}
+
+.privacyTitle {
+    display: block;
+}
+
+.privacyDescription {
+    font-weight: 500;
+}
+
+.modalWindow {
+    display: none;
+}
+
+.modaal-close:after,
+.modaal-close:before {
+    background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+    background: #666;
+}
+
+#modaal-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.modaal-video .modaal-inner-wrapper {
+    padding: 0;
+}
+
+/* ▲main▲ */
+
+/* ▼works▼ */
+.worksAreaHead {
+    padding: 40px 0 0 0;
+    margin: 0 0 40px 0;
+}
+
+.backButton {
+    font-size: 50px;
+}
+
+.backButton i {
+    margin: 0 0 20px 0;
+}
+
+.worksLists {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.workList {
+    width: 33%;
+    padding: 30px;
+}
+
+.workList img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    border: solid;
+    padding: 10px;
+}
+
+/* ▲works▲ */
+
+/* deliverables */
+.deliverablesImage {
+    width: 100%;
+    position: relative;
+    border-bottom: solid;
+    display: flex;
+    background: linear-gradient(70deg, #fff, #eee);
+    background: -moz-linear-gradient(70deg, #fff, #eee);
+    background: -webkit-linear-gradient(70deg, #fff, #eee);
+}
+
+.deliverablesImage img {
+    width: 50%;
+    border: solid;
+    padding: 30px;
+    margin: 30px 30px 30px auto;
+}
+
+.backLink {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 50px;
+}
+
+.deliverablesDescription {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border: solid;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.deliverablesTitle {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 120px;
+    margin: 0 0 20px 0;
+}
+
+.deliverablesTag {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    display: flex;
+}
+
+.deliverablesTag p {
+    border: solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.contactArea {
+    border-bottom: solid;
+}
+
+.contactContainer {
+    padding: 0 50px;
+    margin: 0 0 40px 0;
+}
+
+
+.overviewArea {
+    border-bottom: solid;
+}
+
+.overviewContainar {
+    padding: 0 50px;
+    margin: 0 0 40px 0;
+}
+
+.overviewWrapper {
+    display: flex;
+}
+
+.overviewBlocks {
+    width: 50%;
+}
+
+.overviewBlock {
+    margin: 0 0 40px 0;
+}
+
+.overviewBlock h2 {
+    font-family: "Black Ops One", system-ui;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.overviewBlock p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+    margin: 0 0 0 10px;
+}
+
+.explanation {
+    width: 50%;
+    border: solid;
+    padding: 30px;
+}
+
+.explanation p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 15px;
+}
+
+/* deliverables */
+
+/* 404 */
+.errorArea {
+    min-height: 800px;
+    border-bottom: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorArea h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 200px;
+}
+
+.errorArea h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 200px;
+    text-align: center;
+}
+
+/* 404 */

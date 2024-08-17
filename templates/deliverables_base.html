@@ -1,0 +1,209 @@
+{% extends 'other_base.html' %}
+{% block content %}
+
+<div class="deliverablesImage">
+    {% block deliverablesImage %}
+    {% endblock %}
+    <a href="#" class="backLink" onClick="history.back(); return false;"><i class="fa-solid fa-arrow-left"></i></a>
+    <div class="deliverablesDescription">
+        {% block deliverablesTitle %}
+        {% endblock %}
+        <div class="deliverablesTag">
+            {% block deliverablesTag %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+<div class="overviewArea">
+    <div class="overviewContainar">
+        <div class="areaHead">
+            <p class="englishTitle">Overview</p>
+            <p class="japaneseTitle">概要</p>
+        </div>
+
+        <div class="overviewWrapper">
+            <div class="overviewBlocks">
+                <div class="overviewBlock">
+                    <h2>SCOPE</h2>
+                    {% block overviewBlockScope %}
+                    {% endblock %}
+                </div>
+
+                <div class="overviewBlock">
+                    <h2>CLIENT</h2>
+                    {% block overviewBlockClient %}
+                    {% endblock %}
+                </div>
+
+                <div class="overviewBlock">
+                    <h2>SITE</h2>
+                    {% block overviewBlockSite %}
+                    {% endblock %}
+                </div>
+
+                <div class="overviewBlock">
+                    <h2>USED_TECHNOLOGY</h2>
+                    {% block overviewBlockTechnology %}
+                    {% endblock %}
+                </div>
+            </div>
+
+            <div class="explanation">
+                {% block explanation %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="worksArea">
+    <div class="worksContainar">
+        <div class="areaHead">
+            <p class="englishTitle">Works</p>
+            <p class="japaneseTitle">制作実績</p>
+            <a href="/works" class="areaLink">実績一覧 ></a>
+        </div>
+
+        <div class="sliderArea">
+            <ul class="worksSliderTop">
+                <li>
+                    <a href="/works/kankan">
+                        <img src="../static/image/kankan.png"
+                            alt="菅叶和｜かんかんな｜KanKanna｜kankanna｜かんかん｜KanKan｜kankan｜ファンサイト｜FanSite">
+                        <div class="worksInfo">
+                            <p class="worksTitle">FanSite - kankan</p>
+                            <p class="worksDescription">女性声優として活躍されている菅叶和さんのファンサイトのデザイン、コーディングをさせていただきました。</p>
+                        </div>
+                        <div class="worksTag">
+                            <p>自主制作</p>
+                            <p>ファンサイト</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- <img src="" alt="">
+                        <div class="worksInfo">
+                            <p class="worksTitle"></p>
+                            <p class="worksDescription"></p>
+                        </div>
+                        <div class="worksTag">
+                            <p></p>
+                            <p></p>
+                        </div> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- <img src="" alt="">
+                        <div class="worksInfo">
+                            <p class="worksTitle"></p>
+                            <p class="worksDescription"></p>
+                        </div>
+                        <div class="worksTag">
+                            <p></p>
+                            <p></p>
+                        </div> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- <img src="" alt="">
+                        <div class="worksInfo">
+                            <p class="worksTitle"></p>
+                            <p class="worksDescription"></p>
+                        </div>
+                        <div class="worksTag">
+                            <p></p>
+                            <p></p>
+                        </div> -->
+                    </a>
+                </li>
+                <li>
+                    <!-- <a href="#">
+                        <img src="" alt="">
+                        <div class="worksInfo">
+                            <p class="worksTitle"></p>
+                            <p class="worksDescription"></p>
+                        </div>
+                        <div class="worksTag">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </a> -->
+                </li>
+            </ul>
+
+            <ul class="worksSliderBottom" dir="rtl">
+                <li>
+                    <!-- <a href="#">
+                        <img src="" alt="">
+                        <div class="worksInfo">
+                            <p class="worksTitle"></p>
+                            <p class="worksDescription"></p>
+                        </div>
+                        <div class="worksTag">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </a> -->
+                </li>
+                <li>
+                    <!-- <a href="#">
+                        <img src="" alt="">
+                        <div class="worksInfo">
+                            <p class="worksTitle"></p>
+                            <p class="worksDescription"></p>
+                        </div>
+                        <div class="worksTag">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </a> -->
+                </li>
+                <li>
+                    <!-- <a href="#">
+                        <img src="" alt="">
+                        <div class="worksInfo">
+                            <p class="worksTitle"></p>
+                            <p class="worksDescription"></p>
+                        </div>
+                        <div class="worksTag">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </a> -->
+                </li>
+                <li>
+                    <!-- <a href="#">
+                        <img src="" alt="">
+                        <div class="worksInfo">
+                            <p class="worksTitle"></p>
+                            <p class="worksDescription"></p>
+                        </div>
+                        <div class="worksTag">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </a> -->
+                </li>
+                <li>
+                    <!-- <a href="#">
+                        <img src="" alt="">
+                        <div class="worksInfo">
+                            <p class="worksTitle"></p>
+                            <p class="worksDescription"></p>
+                        </div>
+                        <div class="worksTag">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </a> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

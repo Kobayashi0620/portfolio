@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="email=no,telephone=no,address=no">
+    <title>こばやし -Kobayashi- | Portfolio</title>
+
+    <!-- ogp -->
+    <meta name="description"
+        content="Web制作、システム開発、自動化など、Webに関する幅広いサービスを提供しております。お客様のご要望を丁寧にヒアリングし、最適なソリューションをご提案いたします。">
+    <!-- //TODO改行されるかどうか -->
+    <meta property="og:url" content="ページのURL"> <!-- //TODOドメイン取得する？しない？ -->
+    <meta property="og:title" content="こばやし -Kobayashi- | Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Web制作、システム開発、自動化など、Webに関する幅広いサービスを提供しております。お客様のご要望を丁寧にヒアリングし、最適なソリューションをご提案いたします。">
+    <!-- //TODO改行されるかどうか -->
+    <meta property="og:image" content="../static/image/kannaSign.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@Twitterユーザー名"> -->
+    <meta property="og:site_name" content="こばやし -Kobayashi- | Portfolio">
+    <meta property="og:locale" content="ja_JP">
+    <!-- <meta property="fb:app_id" content="appIDを入力"> -->
+    <meta name="robots" content="max-image-preview:large">
+
+    <link rel="canonical" href="正規化するURL"> <!-- //TODOドメイン取得する？しない？ -->
+
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="../static/image/kannaSign.png" sizes="16x16" type="image/png"> <!-- //TODOflask用に変換すること -->
+    <link rel="icon" href="../static/image/kannaSign.png" sizes="32x32" type="image/png"> <!-- //TODOflask用に変換すること -->
+    <link rel="icon" href="../static/image/kannaSign.png" sizes="48x48" type="image/png"> <!-- //TODOflask用に変換すること -->
+    <link rel="icon" href="../static/image/kannaSign.png" sizes="62x62" type="image/png"> <!-- //TODOflask用に変換すること -->
+    <link rel="shortcut icon" href="../static/image/kannaSign.ico" type="image/x-icon"> <!-- //TODOflask用に変換すること -->
+    <link rel="apple-touch-icon-precomposed" href="../static/image/kannaSign.png"> <!-- //TODOflask用に変換すること -->
+    <meta name="msapplication-TileImage" content="../static/image/kannaSign.png"> <!-- //TODOflask用に変換すること -->
+    <meta name="msapplication-TileColor" content="#FEDFE1" />
+
+    <!-- <link rel="alternate" type="application/rss+xml" title="フィード" href="フィードページのURL"> -->
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/container.css">
+    <!-- slick.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- modaal.css -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <!-- destyle.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <!-- googlefont.css(icon) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!-- fontawesome.js -->
+    <script src="https://kit.fontawesome.com/b5b4c80ba5.js" crossorigin="anonymous"></script>
+    <script src="JavaScriptファイルのURL"></script>
+</head>
+
+<body>
+    <div id="splash">
+        <div id="splash_bar"></div>
+    </div>
+
+    <header>
+        {% block header %}
+        <div class="siteName">
+            <a href="#top" id="topScroll">
+                <h1>Kobayashi</h1>
+                <h2>Portfolio Site</h2>
+            </a>
+        </div>
+
+        <ul id="headerMenu" class="headerMenu">
+            <li><a href="#top">Top</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy" class="privacyLink">Praivacy</a></li>
+        </ul>
+        {% endblock %}
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+        <div class="modalWindow">
+            <div id="x-twitter" class="x-twitter">
+                <a class="twitter-timeline" href="https://twitter.com/0620_kobayashi?ref_src=twsrc%5Etfw">Tweets by
+                    0620_kobayashi</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div id="privacy" class="privacyArea">
+                <div class="privacyContainer">
+                    <div class="mordalAreaHead">
+                        <p class="englishTitle">PrivacyPolicy</p>
+                        <p class="japaneseTitle">プライバシーポリシー</p>
+                    </div>
+                </div>
+
+                <div class="privacyLists">
+                    <p>こばやし（以下、当エンジニアという）は、個人情報取扱事業者として、個人情報の保護に関連する法令を誠実に遵守し、お客様からご提供いただく個人情報の管理・運営を行ってまいります。</p>
+                    <ol type="1" class="privacyList">
+                        <li>
+                            <span class="privacyTitle">個人情報の取得</span>
+                            <span
+                                class="privacyDescription">当エンジニアが個人情報を取得する場合には情報主体者（以下、本人という）に利用目的をあらかじめお知らせした上で、その目的の達成に必要な範囲の情報のみを適法かつ公正な手段で取得いたします。</span>
+                        </li>
+                        <li>
+                            <span class="privacyTitle">個人情報の利用</span>
+                            <span class="privacyDescription">
+                                当エンジニアは個人情報を取得の際に本人にお知らせする目的の範囲内で利用します。<br>
+                                お知らせした目的の範囲を超えて利用する必要が生じた場合は新たな利用目的をご連絡した上で、ご同意いただけた場合のみ利用します。<br>
+                                ただし、個人が特定できない形でデータの統計をとるために利用する場合があります。
+                            </span>
+                        </li>
+                        <li>
+                            <span class="privacyTitle">第三者への情報提供</span>
+                            <span class="privacyDescription">あらかじめ本人より同意を得ない限り法令に定める場合を除いて、第三者に個人情報を提供することはありません。</span>
+                        </li>
+                        <li>
+                            <span class="privacyTitle">個人情報の正確性および安全性の確保</span>
+                            <span
+                                class="privacyDescription">個人情報の正確性および安全性を確保するため,安全対策を実施し個人情報への不正アクセスまたは個人情報の紛失、破壊、改ざん、および漏えい等の予防ならびに是正に努めます。</span>
+                        </li>
+                        <li>
+                            <span class="privacyTitle">外部との業務委託</span>
+                            <span class="privacyDescription">
+                                当エンジニアはお客様によりよいサービスを提供するため、個人情報の全部又は一部を外部に委託することがあります。<br>
+                                業務委託契約を締結する際には、委託先に個人情報保護方針の遵守を義務付け、委託先に対する管理・監督を徹底いたします。
+                            </span>
+                        </li>
+                        <li>
+                            <span class="privacyTitle">法令等の遵守</span>
+                            <span
+                                class="privacyDescription">当エンジニアは個人情報の取扱いにおいて、当該個人情報の保護に適用される法令及び関連するガイドライン・その他の規範を遵守します。</span>
+                        </li>
+                        <li>
+                            <span class="privacyTitle">個人情報に関するお問い合わせ</span>
+                            <span class="privacyDescription">「プライバシーポリシーに関するお問い合わせ」は以下からお問い合わせください。</span>
+                        </li>
+                    </ol>
+                    <p>
+                        こばやし<br>
+                        k.kobayashi6252@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        {% block footer %}
+        <ul id="footerMenu" class="footerMenu">
+            <li><a href="#top">Top</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy" class="privacyLink">Praivacy</a></li>
+        </ul>
+        {% endblock %}
+
+        <div class="snsMenu">
+            <a href="#x-twitter" class="x-twitterLink"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <!-- ▼common▼ -->
+    <!-- jQuery.js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- cookie.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <!-- slick.js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- modaal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <!-- easing.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- progressbar.js -->
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!-- ▲common▲ -->
+
+    <!-- ▼loading▼ -->
+    <script src="../static/js/loading.js"></script>
+    <!-- ▲loading▲ -->
+
+    <!-- ▼WebShareAPI▼ -->
+    <script src="../static/js/web-share.js"></script>
+    <!-- ▲WebShareAPI▲ -->
+
+    <!-- ▼SlideShow▼ -->
+    <script src="../static/js/slide-show.js"></script>
+    <!-- ▲SlideShow▲ -->
+
+    <!-- ▼ModalWindow▼ -->
+    <script src="../static/js/modal-window.js"></script>
+    <!-- ▲ModalWindow▲ -->
+
+    <!-- ▼ClickSlide▼ -->
+    <script src="../static/js/click-slide.js"></script>
+    <!-- ▲ClickSlide▲ -->
+
+    <!-- ▼pageScroll▼ -->
+    <script src="../static/js/page-scroll.js"></script>
+    <!-- ▲pageScroll▲ -->
+
+    <!-- ▼topScroll▼ -->
+    <script src="../static/js/top-scroll.js"></script>
+    <!-- ▲topScroll▲ -->
+</body>
+
+</html>

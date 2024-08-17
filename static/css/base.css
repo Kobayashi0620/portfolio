@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* Noto Sans Japanese */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* Hannari */
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+
+/* Black Ops One */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* ▼header▼ */
+header {
+    width: 200px;
+    height: 100%;
+    font-family: "Black Ops One", system-ui;
+    position: fixed;
+    border: solid;
+    background-color: #fff;
+}
+
+.siteName {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid;
+}
+
+.siteName h1 {
+    font-size: 30px;
+}
+
+.siteName h2 {
+    font-size: 25px;
+    text-align: right;
+}
+
+.headerMenu li {
+    font-size: 25px;
+    padding: 20px;
+}
+/* ▲header▲ */
+
+/* ▼footer▼ */
+footer {
+    width: 100%;
+    font-family: "Black Ops One", system-ui;
+    padding: 0 0 0 200px;
+}
+
+.footerMenu {
+    display: flex;
+    margin: 40px 0 40px 20px;
+}
+
+.footerMenu li {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.snsMenu {
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    margin: 0 20px 0 0;
+}
+
+.snsMenu a {
+    margin: 0 20px 40px 20px;
+}
+/* ▲footer▲ */
