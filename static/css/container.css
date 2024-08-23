@@ -31,7 +31,6 @@
     font-size: 15px;
     border-bottom: 1px solid;
 }
-
 /* ▲common▲ */
 
 /* ▼loading▼ */
@@ -54,7 +53,6 @@
     transform: translate(-50%, -50%);
     border: solid;
 }
-
 /* ▲loading▲ */
 
 /* ▼main▼ */
@@ -71,7 +69,6 @@ main {
 }
 
 .topArea video {
-    /* height: 850px; */
     width: 33%;
     object-fit: cover;
     padding: 10px;
@@ -101,7 +98,7 @@ main {
     border-bottom: solid;
 }
 
-.worksContainar {
+.worksContainer {
     padding: 0 50px;
     margin: 0 0 40px 0;
 }
@@ -111,8 +108,7 @@ main {
 }
 
 .worksSliderTop li {
-    width: 100px;
-    min-height: 350px;
+    min-height: 400px;
     border: solid;
 }
 
@@ -133,8 +129,7 @@ main {
 }
 
 .worksSliderBottom li {
-    width: 100px;
-    height: 350px;
+    min-height: 400px;
     border: solid;
 }
 
@@ -168,6 +163,7 @@ main {
 
 .worksTag {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -177,14 +173,14 @@ main {
     border: 1px solid;
     border-radius: 10px;
     padding: 5px;
-    margin: 0 10px;
+    margin: 5px 10px;
 }
 
 .aboutArea {
     border-bottom: solid;
 }
 
-.aboutContainar {
+.aboutContainer {
     padding: 0 50px;
     margin: 0 0 40px 0;
 }
@@ -317,7 +313,7 @@ main {
     border-bottom: solid;
 }
 
-.skkillsContainer {
+.skillsContainer {
     padding: 0 50px;
     margin: 0 0 40px 0;
 }
@@ -329,10 +325,10 @@ main {
 }
 
 .skillList {
-    width: 33%;
+    min-width: 300px;
+    width: 30%;
     padding: 30px;
 }
-
 
 .skillTitle {
     font-family: "Noto Sans JP", sans-serif;
@@ -499,7 +495,6 @@ main {
 .modaal-video .modaal-inner-wrapper {
     padding: 0;
 }
-
 /* ▲main▲ */
 
 /* ▼works▼ */
@@ -519,10 +514,12 @@ main {
 .worksLists {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .workList {
     width: 33%;
+    min-width: 400px;
     padding: 30px;
 }
 
@@ -532,27 +529,28 @@ main {
     object-fit: cover;
     object-position: 50% 0%;
     border: solid;
+    aspect-ratio: 4/3;
     padding: 10px;
 }
-
 /* ▲works▲ */
 
-/* deliverables */
-.deliverablesImage {
+/* ▼deliverables▼ */
+.deliverablesImageArea {
     width: 100%;
     position: relative;
     border-bottom: solid;
     display: flex;
-    background: linear-gradient(70deg, #fff, #eee);
-    background: -moz-linear-gradient(70deg, #fff, #eee);
-    background: -webkit-linear-gradient(70deg, #fff, #eee);
+}
+
+.deliverablesImage {
+    width: 100%;
+    background-color: #fff;
+    margin: 20px auto;
 }
 
 .deliverablesImage img {
-    width: 50%;
-    border: solid;
-    padding: 30px;
-    margin: 30px 30px 30px auto;
+    width: 100%;
+    opacity: 0.75;
 }
 
 .backLink {
@@ -567,7 +565,7 @@ main {
     bottom: 30px;
     left: 30px;
     border: solid;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 50px;
 }
 
@@ -599,12 +597,11 @@ main {
     margin: 0 0 40px 0;
 }
 
-
 .overviewArea {
     border-bottom: solid;
 }
 
-.overviewContainar {
+.overviewContainer {
     padding: 0 50px;
     margin: 0 0 40px 0;
 }
@@ -614,7 +611,8 @@ main {
 }
 
 .overviewBlocks {
-    width: 50%;
+    width: 30%;
+    min-width: 210px;
 }
 
 .overviewBlock {
@@ -634,7 +632,7 @@ main {
 }
 
 .explanation {
-    width: 50%;
+    width: 70%;
     border: solid;
     padding: 30px;
 }
@@ -643,10 +641,9 @@ main {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 15px;
 }
+/* ▲deliverables▲ */
 
-/* deliverables */
-
-/* 404 */
+/* ▼404▼ */
 .errorArea {
     min-height: 800px;
     border-bottom: solid;
@@ -666,5 +663,1686 @@ main {
     font-size: 200px;
     text-align: center;
 }
+/* ▲404▲ */
 
-/* 404 */
+/* ▼laptopザイン▼ */
+@media (1130px <= width <= 1350px) {
+    .areaHead {
+        margin: 40px 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 0 0 200px;
+    }
+
+    .topArea video {
+        width: 33%;
+        object-fit: cover;
+        padding: 10px;
+    }
+
+    .overlayTitle {
+        font-family: "Black Ops One", system-ui;
+        font-size: 120px;
+        color: #fff;
+    }
+
+    .overlayTitle h2 {
+        position: absolute;
+        bottom: 160px;
+        left: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .overlayTitle h3 {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .aboutBlock {
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutWrapper {
+        display: flex;
+    }
+    
+    .aboutIntroduction {
+        width: 40%;
+        padding: 0 20px 0 0;
+    }
+    
+    .aboutIntroduction ul {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+    }
+    
+    .aboutIntroduction li {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 15px;
+        margin: 0 0 5px 0;
+    }
+    
+    .borderBottom {
+        width: 100%;
+        border-bottom: solid;
+    }
+    
+    .introductionTitle {
+        padding: 0 10px 0 0;
+    }
+    
+    .introductionDescription {
+        padding: 0 0 0 10px;
+    }
+    
+    .profileSNS {
+        margin: 40px 0 0 0;
+    }
+    
+    .profileSNS i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    
+    .aboutBiography {
+        width: 60%;
+    }
+    
+    .yearColumn {
+        width: 30%;
+    }
+    
+    .historyColumn {
+        width: 70%;
+    }
+    
+    .aboutBiography ul {
+        height: 350px;
+        overflow: hidden scroll;
+        border-left: solid;
+        padding: 0 0 0 20px;
+    }
+    
+    .aboutBiography li {
+        display: flex;
+        border: solid;
+        padding: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .worksContainer {
+        padding: 0 50px;
+        margin: 0 0 40px 0;
+    }
+
+    .aboutContainer {
+        padding: 0 50px;
+        margin: 0 0 40px 0;
+    }
+
+    .skillsContainer {
+        padding: 0 50px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 50px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 50px;
+        margin: 0 0 40px 0;
+    }
+
+    .overviewContainer {
+        padding: 0 50px;
+        margin: 0 0 40px 0;
+    }
+
+    .workList {
+        width: 33%;
+        min-width: 400px;
+        padding: 30px;
+    }
+
+    .deliverablesImageArea {
+        width: 100%;
+        position: relative;
+        border-bottom: solid;
+        display: flex;
+    }
+    
+    .deliverablesImage {
+        width: 100%;
+        background-color: #fff;
+        margin: 20px auto;
+    }
+    
+    .deliverablesImage img {
+        width: 100%;
+        opacity: 0.75;
+    }
+
+    .deliverablesDescription {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        border: solid;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    .deliverablesTitle {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 80px;
+        margin: 0 0 20px 0;
+    }
+    
+    .deliverablesTag {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 20px;
+        display: flex;
+    }
+
+    .deliverablesTag p {
+        border: solid;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .overviewWrapper {
+        display: flex;
+    }
+
+    .overviewBlocks {
+        width: 30%;
+        min-width: 210px;
+    }
+    
+    .explanation {
+        width: 70%;
+        border: solid;
+        padding: 30px;
+    }
+}
+
+@media (990px <= width <= 1130px) {
+    .areaHead {
+        margin: 20px 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 0 0 200px;
+    }
+
+    .topArea video {
+        width: 33%;
+        object-fit: cover;
+        padding: 10px;
+    }
+
+    .overlayTitle {
+        font-family: "Black Ops One", system-ui;
+        font-size: 100px;
+        color: #fff;
+    }
+
+    .overlayTitle h2 {
+        position: absolute;
+        bottom: 130px;
+        left: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .overlayTitle h3 {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .aboutBlock {
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutWrapper {
+        display: flex;
+    }
+    
+    .aboutIntroduction {
+        width: 40%;
+        padding: 0 20px 0 0;
+    }
+    
+    .aboutIntroduction ul {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+    }
+    
+    .aboutIntroduction li {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 15px;
+        margin: 0 0 5px 0;
+    }
+    
+    .borderBottom {
+        width: 100%;
+        border-bottom: solid;
+    }
+    
+    .introductionTitle {
+        padding: 0 10px 0 0;
+    }
+    
+    .introductionDescription {
+        padding: 0 0 0 10px;
+    }
+    
+    .profileSNS {
+        margin: 40px 0 0 0;
+    }
+    
+    .profileSNS i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    
+    .aboutBiography {
+        width: 60%;
+    }
+    
+    .yearColumn {
+        width: 30%;
+    }
+    
+    .historyColumn {
+        width: 70%;
+    }
+    
+    .aboutBiography ul {
+        height: 350px;
+        overflow: hidden scroll;
+        border-left: solid;
+        padding: 0 0 0 20px;
+    }
+    
+    .aboutBiography li {
+        display: flex;
+        border: solid;
+        padding: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .worksContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .aboutContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .skillsContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .overviewContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .workList {
+        width: 33%;
+        min-width: 400px;
+        padding: 30px;
+    }
+
+    .deliverablesImageArea {
+        width: 100%;
+        position: relative;
+        border-bottom: solid;
+        display: flex;
+    }
+    
+    .deliverablesImage {
+        width: 100%;
+        background-color: #fff;
+        margin: 20px auto;
+    }
+    
+    .deliverablesImage img {
+        width: 100%;
+        opacity: 0.75;
+    }
+
+    .deliverablesDescription {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        border: solid;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    .deliverablesTitle {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 70px;
+        margin: 0 0 20px 0;
+    }
+    
+    .deliverablesTag {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 16px;
+        display: flex;
+    }
+
+    .deliverablesTag p {
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .overviewWrapper {
+        display: flex;
+    }
+
+    .overviewBlocks {
+        width: 30%;
+        min-width: 210px;
+    }
+    
+    .explanation {
+        width: 70%;
+        border: solid;
+        padding: 30px;
+    }
+}
+
+@media (834px <= width <= 990px) {
+    .areaHead {
+        margin: 20px 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 0 0 200px;
+    }
+
+    .topArea video {
+        width: 33%;
+        object-fit: cover;
+        padding: 5px;
+    }
+
+    .overlayTitle {
+        font-family: "Black Ops One", system-ui;
+        font-size: 80px;
+        color: #fff;
+    }
+
+    .overlayTitle h2 {
+        position: absolute;
+        bottom: 110px;
+        left: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .overlayTitle h3 {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .slick-track {
+        display: none;
+    }
+
+    .worksSliderBottom .slick-track {
+        display: none;
+    }
+
+    .aboutBlock {
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutWrapper {
+        display: block;
+    }
+    
+    .aboutIntroduction {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    
+    .aboutIntroduction ul {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+    }
+    
+    .aboutIntroduction li {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 15px;
+        margin: 0 0 5px 0;
+    }
+    
+    .borderBottom {
+        width: 100%;
+        border-bottom: solid;
+    }
+    
+    .introductionTitle {
+        padding: 0 10px 0 0;
+    }
+    
+    .introductionDescription {
+        padding: 0 0 0 10px;
+    }
+    
+    .profileSNS {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .profileSNS i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    
+    .aboutBiography {
+        width: 100%;
+    }
+    
+    .yearColumn {
+        width: 30%;
+    }
+    
+    .historyColumn {
+        width: 70%;
+    }
+    
+    .aboutBiography ul {
+        height: 350px;
+        overflow: hidden scroll;
+        border-left: none;
+        padding: 0 0 0 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutBiography li {
+        display: flex;
+        border: solid;
+        padding: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .worksContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .aboutContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .skillsContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .skillLists {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .skillList {
+        min-width: 300px;
+        width: 30%;
+        padding: 30px;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .overviewContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .workList {
+        width: 33%;
+        min-width: 400px;
+        padding: 30px;
+    }
+
+    .deliverablesImageArea {
+        width: 100%;
+        position: relative;
+        border-bottom: solid;
+        display: flex;
+    }
+    
+    .deliverablesImage {
+        width: 100%;
+        background-color: #fff;
+        margin: 20px auto;
+    }
+    
+    .deliverablesImage img {
+        width: 100%;
+        opacity: 0.75;
+    }
+
+    .deliverablesDescription {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .deliverablesTitle {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 60px;
+        margin: 0 0 20px 0;
+    }
+    
+    .deliverablesTag {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .deliverablesTag p {
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .overviewWrapper {
+        display: flex;
+    }
+
+    .overviewBlocks {
+        width: 30%;
+        min-width: 210px;
+    }
+    
+    .explanation {
+        width: 70%;
+        border: solid;
+        padding: 20px;
+    }
+}
+/* ▲laptopザイン▲ */
+
+/* ▼tabletザイン▼ */
+@media (700px <= width <= 834px) {
+    .areaHead {
+        margin: 20px 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 0 0 200px;
+    }
+
+    .topArea video {
+        width: 33%;
+        object-fit: cover;
+        padding: 5px;
+    }
+
+    .overlayTitle {
+        font-family: "Black Ops One", system-ui;
+        font-size: 60px;
+        color: #fff;
+    }
+
+    .overlayTitle h2 {
+        position: absolute;
+        bottom: 90px;
+        left: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .overlayTitle h3 {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .worksSliderBottom .slick-track {
+        display: none;
+    }
+
+    .aboutBlock {
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutWrapper {
+        display: block;
+    }
+    
+    .aboutIntroduction {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    
+    .aboutIntroduction ul {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+    }
+    
+    .aboutIntroduction li {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 15px;
+        margin: 0 0 5px 0;
+    }
+    
+    .borderBottom {
+        width: 100%;
+        border-bottom: solid;
+    }
+    
+    .introductionTitle {
+        padding: 0 10px 0 0;
+    }
+    
+    .introductionDescription {
+        padding: 0 0 0 10px;
+    }
+    
+    .profileSNS {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .profileSNS i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    
+    .aboutBiography {
+        width: 100%;
+    }
+    
+    .yearColumn {
+        width: 30%;
+    }
+    
+    .historyColumn {
+        width: 70%;
+    }
+    
+    .aboutBiography ul {
+        height: 350px;
+        overflow: hidden scroll;
+        border-left: none;
+        padding: 0 0 0 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutBiography li {
+        display: flex;
+        border: solid;
+        padding: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .worksContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .aboutContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .skillsContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .overviewContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .workList {
+        width: 33%;
+        min-width: 400px;
+        padding: 30px;
+    }
+    
+    .deliverablesImage {
+        width: 100%;
+        background-color: #fff;
+        margin: 20px auto;
+    }
+    
+    .deliverablesImage img {
+        width: 100%;
+        opacity: 0.75;
+    }
+
+    .deliverablesDescription {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .deliverablesTitle {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 60px;
+        margin: 0 0 20px 0;
+    }
+    
+    .deliverablesTag {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .deliverablesTag p {
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .overviewWrapper {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .overviewBlocks {
+        width: 100%;
+        min-width: 210px;
+    }
+    
+    .explanation {
+        width: 100%;
+        border: solid;
+        padding: 30px;
+    }
+}
+
+@media (620px <= width <= 700px) {
+    .areaHead {
+        margin: 20px 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 0 0 200px;
+    }
+
+    .topArea video {
+        width: 33%;
+        object-fit: cover;
+        padding: 5px;
+    }
+
+    .overlayTitle {
+        font-family: "Black Ops One", system-ui;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .overlayTitle h2 {
+        position: absolute;
+        bottom: 80px;
+        left: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .overlayTitle h3 {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .worksSliderBottom .slick-track {
+        display: none;
+    }
+
+    .aboutBlock {
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutWrapper {
+        display: block;
+    }
+    
+    .aboutIntroduction {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    
+    .aboutIntroduction ul {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+    }
+    
+    .aboutIntroduction li {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 15px;
+        margin: 0 0 5px 0;
+    }
+    
+    .borderBottom {
+        width: 100%;
+        border-bottom: solid;
+    }
+    
+    .introductionTitle {
+        padding: 0 10px 0 0;
+    }
+    
+    .introductionDescription {
+        padding: 0 0 0 10px;
+    }
+    
+    .profileSNS {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .profileSNS i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    
+    .aboutBiography {
+        width: 100%;
+    }
+    
+    .yearColumn {
+        width: 30%;
+    }
+    
+    .historyColumn {
+        width: 70%;
+    }
+    
+    .aboutBiography ul {
+        height: 350px;
+        overflow: hidden scroll;
+        border-left: none;
+        padding: 0 0 0 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutBiography li {
+        display: flex;
+        border: solid;
+        padding: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .worksContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .aboutContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .skillsContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .overviewContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .workList {
+        width: 33%;
+        min-width: 400px;
+        padding: 30px;
+    }
+
+    .deliverablesImage {
+        width: 100%;
+        background-color: #fff;
+        margin: 20px auto;
+    }
+    
+    .deliverablesImage img {
+        width: 100%;
+        opacity: 0.75;
+    }
+
+    .deliverablesDescription {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .deliverablesTitle {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 60px;
+        margin: 0 0 20px 0;
+    }
+    
+    .deliverablesTag {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .deliverablesTag p {
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .overviewWrapper {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .overviewBlocks {
+        width: 100%;
+        min-width: 210px;
+    }
+    
+    .explanation {
+        width: 100%;
+        border: solid;
+        padding: 30px;
+    }
+}
+
+@media (550px <= width <= 620px) {
+    .areaHead {
+        margin: 20px 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+
+    .topArea video {
+        width: 33%;
+        object-fit: cover;
+        padding: 5px;
+    }
+
+    .overlayTitle {
+        font-family: "Black Ops One", system-ui;
+        font-size: 60px;
+        color: #fff;
+    }
+
+    .overlayTitle h2 {
+        position: absolute;
+        bottom: 90px;
+        left: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .overlayTitle h3 {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .worksSliderBottom .slick-track {
+        display: none;
+    }
+
+    .aboutBlock {
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutWrapper {
+        display: block;
+    }
+    
+    .aboutIntroduction {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    
+    .aboutIntroduction ul {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+    }
+    
+    .aboutIntroduction li {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 15px;
+        margin: 0 0 5px 0;
+    }
+    
+    .borderBottom {
+        width: 100%;
+        border-bottom: solid;
+    }
+    
+    .introductionTitle {
+        padding: 0 10px 0 0;
+    }
+    
+    .introductionDescription {
+        padding: 0 0 0 10px;
+    }
+    
+    .profileSNS {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .profileSNS i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    
+    .aboutBiography {
+        width: 100%;
+    }
+    
+    .yearColumn {
+        width: 30%;
+    }
+    
+    .historyColumn {
+        width: 70%;
+    }
+    
+    .aboutBiography ul {
+        height: 350px;
+        overflow: hidden scroll;
+        border-left: none;
+        padding: 0 0 0 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutBiography li {
+        display: flex;
+        border: solid;
+        padding: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .worksContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .aboutContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .skillsContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .overviewContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .workList {
+        width: 33%;
+        min-width: 400px;
+        padding: 30px;
+    }
+
+    .deliverablesImage {
+        width: 100%;
+        background-color: #fff;
+        margin: 20px auto;
+    }
+    
+    .deliverablesImage img {
+        width: 100%;
+        opacity: 0.75;
+    }
+
+    .deliverablesDescription {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .deliverablesTitle {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 50px;
+        margin: 0 0 20px 0;
+    }
+    
+    .deliverablesTag {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .deliverablesTag p {
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .overviewWrapper {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .overviewBlocks {
+        width: 100%;
+        min-width: 210px;
+    }
+    
+    .explanation {
+        width: 100%;
+        border: solid;
+        padding: 30px;
+    }
+}
+
+@media (414px <= width <= 550px) {
+    .areaHead {
+        margin: 20px 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+
+    .topArea video {
+        width: 33%;
+        object-fit: cover;
+        padding: 5px;
+    }
+
+    .overlayTitle {
+        font-family: "Black Ops One", system-ui;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .overlayTitle h2 {
+        position: absolute;
+        bottom: 80px;
+        left: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .overlayTitle h3 {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .worksSliderBottom .slick-track {
+        display: none;
+    }
+
+    .aboutBlock {
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutWrapper {
+        display: block;
+    }
+    
+    .aboutIntroduction {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    
+    .aboutIntroduction ul {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+    }
+    
+    .aboutIntroduction li {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 15px;
+        margin: 0 0 5px 0;
+    }
+    
+    .borderBottom {
+        width: 100%;
+        border-bottom: solid;
+    }
+    
+    .introductionTitle {
+        padding: 0 10px 0 0;
+    }
+    
+    .introductionDescription {
+        padding: 0 0 0 10px;
+    }
+    
+    .profileSNS {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .profileSNS i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    
+    .aboutBiography {
+        width: 100%;
+    }
+    
+    .yearColumn {
+        width: 30%;
+    }
+    
+    .historyColumn {
+        width: 70%;
+    }
+    
+    .aboutBiography ul {
+        height: 350px;
+        overflow: hidden scroll;
+        border-left: none;
+        padding: 0 0 0 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutBiography li {
+        display: flex;
+        border: solid;
+        padding: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .worksContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .aboutContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .skillsContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .overviewContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .workList {
+        width: 33%;
+        min-width: 350px;
+        padding: 10px;
+    }
+
+    .deliverablesImage {
+        width: 100%;
+        background-color: #fff;
+        margin: 20px auto;
+    }
+    
+    .deliverablesImage img {
+        width: 100%;
+        opacity: 0.75;
+    }
+
+    .deliverablesDescription {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .deliverablesTitle {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 40px;
+        margin: 0 0 20px 0;
+    }
+    
+    .deliverablesTag {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .deliverablesTag p {
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .overviewWrapper {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .overviewBlocks {
+        width: 100%;
+        min-width: 210px;
+    }
+    
+    .explanation {
+        width: 100%;
+        border: solid;
+        padding: 30px;
+    }
+}
+/* ▲tabletデザイン▲ */
+
+/* ▼phoneザイン▼ */
+@media (max-width: 414px) {
+    .areaHead {
+        margin: 20px 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+
+    .topArea video {
+        width: 33%;
+        object-fit: cover;
+        padding: 5px;
+    }
+
+    .overlayTitle {
+        font-family: "Black Ops One", system-ui;
+        font-size: 35px;
+        color: #fff;
+    }
+
+    .overlayTitle h2 {
+        position: absolute;
+        bottom: 70px;
+        left: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .overlayTitle h3 {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .worksSliderBottom .slick-track {
+        display: none;
+    }
+
+    .aboutBlock {
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutWrapper {
+        display: block;
+    }
+    
+    .aboutIntroduction {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    
+    .aboutIntroduction ul {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+    }
+    
+    .aboutIntroduction li {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 15px;
+        margin: 0 0 5px 0;
+    }
+    
+    .borderBottom {
+        width: 100%;
+        border-bottom: solid;
+    }
+    
+    .introductionTitle {
+        padding: 0 10px 0 0;
+    }
+    
+    .introductionDescription {
+        padding: 0 0 0 10px;
+    }
+    
+    .profileSNS {
+        border-bottom: solid;
+        padding: 0 0 40px 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .profileSNS i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+    
+    .aboutBiography {
+        width: 100%;
+    }
+    
+    .yearColumn {
+        width: 30%;
+    }
+    
+    .historyColumn {
+        width: 70%;
+    }
+    
+    .aboutBiography ul {
+        height: 350px;
+        overflow: hidden scroll;
+        border-left: none;
+        padding: 0 0 0 0;
+        margin: 40px 0 0 0;
+    }
+    
+    .aboutBiography li {
+        display: flex;
+        border: solid;
+        padding: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .worksContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .aboutContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .skillsContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .contactContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .overviewContainer {
+        padding: 0 25px;
+        margin: 0 0 40px 0;
+    }
+
+    .workList {
+    width: 33%;
+    min-width: 275px;
+    padding: 10px;
+    }
+
+    .deliverablesImage {
+        width: 100%;
+        background-color: #fff;
+        margin: 20px auto;
+    }
+    
+    .deliverablesImage img {
+        width: 100%;
+        opacity: 0.75;
+    }
+
+    .deliverablesDescription {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .deliverablesTitle {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 40px;
+        margin: 0 0 20px 0;
+    }
+    
+    .deliverablesTag {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 12px;
+        display: flex;
+    }
+
+    .deliverablesTag p {
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .overviewWrapper {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .overviewBlocks {
+        width: 100%;
+        min-width: 210px;
+    }
+    
+    .explanation {
+        width: 100%;
+        border: solid;
+        padding: 30px;
+    }
+}
+/* ▲phoneデザイン▲ */

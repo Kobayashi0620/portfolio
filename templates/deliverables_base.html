@@ -1,9 +1,11 @@
 {% extends 'other_base.html' %}
 {% block content %}
 
-<div class="deliverablesImage">
-    {% block deliverablesImage %}
-    {% endblock %}
+<div class="deliverablesImageArea">
+    <div class="deliverablesImage">
+        {% block deliverablesImage %}
+        {% endblock %}
+    </div>
     <a href="#" class="backLink" onClick="history.back(); return false;"><i class="fa-solid fa-arrow-left"></i></a>
     <div class="deliverablesDescription">
         {% block deliverablesTitle %}
@@ -16,7 +18,7 @@
 </div>
 
 <div class="overviewArea">
-    <div class="overviewContainar">
+    <div class="overviewContainer">
         <div class="areaHead">
             <p class="englishTitle">Overview</p>
             <p class="japaneseTitle">概要</p>
@@ -58,7 +60,7 @@
 </div>
 
 <div class="worksArea">
-    <div class="worksContainar">
+    <div class="worksContainer">
         <div class="areaHead">
             <p class="englishTitle">Works</p>
             <p class="japaneseTitle">制作実績</p>
