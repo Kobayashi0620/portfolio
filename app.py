@@ -36,7 +36,7 @@ def contact_form():
 
         msg = Message(
             f'【{name} 様】お問い合わせportfolio',
-            recipients=['k.kobayashi6252@gmail.com'],
+            recipients=['kobayashi.pgworks+Portfolio@gmail.com'],
             body=f'''
             氏名：{name} 様
             メール：{email}

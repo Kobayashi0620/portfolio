@@ -1,7 +1,7 @@
 {% extends 'deliverables_base.html' %}
 
 {% block deliverablesImage %}
-<img src="../static/image/kankan.png" alt="菅叶和｜かんかんな｜KanKanna｜kankanna｜かんかん｜KanKan｜kankan｜ファンサイト｜FanSite">
+<img src="{{ url_for('static', filename='image/kankan.png') }}" alt="菅叶和｜かんかんな｜KanKanna｜kankanna｜かんかん｜KanKan｜kankan｜ファンサイト｜FanSite">
 {% endblock %}
 
 {% block deliverablesTitle %}

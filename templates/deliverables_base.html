@@ -64,14 +64,14 @@
         <div class="areaHead">
             <p class="englishTitle">Works</p>
             <p class="japaneseTitle">制作実績</p>
-            <a href="/works" class="areaLink">実績一覧 ></a>
+            <a href="{{ url_for('works_page') }}" class="areaLink">実績一覧 ></a>
         </div>
 
         <div class="sliderArea">
             <ul class="worksSliderTop">
                 <li>
-                    <a href="/works/kankan">
-                        <img src="../static/image/kankan.png"
+                    <a href="{{ url_for('works_page') }}/kankan">
+                        <img src="{{ url_for('static', filename='image/kankan.png') }}"
                             alt="菅叶和｜かんかんな｜KanKanna｜kankanna｜かんかん｜KanKan｜kankan｜ファンサイト｜FanSite">
                         <div class="worksInfo">
                             <p class="worksTitle">FanSite - kankan</p>

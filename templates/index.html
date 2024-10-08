@@ -3,15 +3,15 @@
 
 <div id="top" class="topArea">
     <video poster="" webkit-playsinline playsinline muted autoplay loop>
-        <source src="../static/video/movie1.mp4" type="video/mp4">
+        <source src="{{ url_for('static', filename='video/movie1.mp4') }}" type="video/mp4">
         <p>動画を再生できる環境ではありません。</p>
     </video>
     <video poster="" webkit-playsinline playsinline muted autoplay loop>
-        <source src="../static/video/movie2.mp4" type="video/mp4">
+        <source src="{{ url_for('static', filename='video/movie2.mp4') }}" type="video/mp4">
         <p>動画を再生できる環境ではありません。</p>
     </video>
     <video poster="" webkit-playsinline playsinline muted autoplay loop>
-        <source src="../static/video/movie3.mp4" type="video/mp4">
+        <source src="{{ url_for('static', filename='video/movie3.mp4') }}" type="video/mp4">
         <p>動画を再生できる環境ではありません。</p>
     </video>
     <div class="overlayTitle">
@@ -25,14 +25,14 @@
         <div class="areaHead">
             <p class="englishTitle">Works</p>
             <p class="japaneseTitle">制作実績</p>
-            <a href="/works" class="areaLink">実績一覧 ></a>
+            <a href="{{ url_for('works_page') }}" class="areaLink">実績一覧 ></a>
         </div>
 
         <div class="sliderArea">
             <ul class="worksSliderTop">
                 <li>
-                    <a href="/works/kankan">
-                        <img src="../static/image/kankan.png"
+                    <a href="{{ url_for('works_page') }}/kankan">
+                        <img src="{{ url_for('static', filename='image/kankan.png') }}"
                             alt="菅叶和｜かんかんな｜KanKanna｜kankanna｜かんかん｜KanKan｜kankan｜ファンサイト｜FanSite">
                         <div class="worksInfo">
                             <p class="worksTitle">FanSite - kankan</p>
@@ -179,22 +179,22 @@
         <div class="aboutImage">
             <ul class="slider clickSlide">
                 <li>
-                    <img src="../static/image/face-sample1.png" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
+                    <img src="{{ url_for('static', filename='image/face-sample1.png') }}" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
                 </li>
                 <li>
-                    <img src="../static/image/face-sample2.png" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
+                    <img src="{{ url_for('static', filename='image/face-sample2.png') }}" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
                 </li>
                 <li>
-                    <img src="../static/image/face-sample1.png" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
+                    <img src="{{ url_for('static', filename='image/face-sample1.png') }}" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
                 </li>
                 <li>
-                    <img src="../static/image/face-sample2.png" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
+                    <img src="{{ url_for('static', filename='image/face-sample2.png') }}" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
                 </li>
                 <li>
-                    <img src="../static/image/face-sample1.png" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
+                    <img src="{{ url_for('static', filename='image/face-sample1.png') }}" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
                 </li>
                 <li>
-                    <img src="../static/image/face-sample2.png" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
+                    <img src="{{ url_for('static', filename='image/face-sample2.png') }}" alt="こばやし｜UIデザイン｜UXデザイン｜Web制作｜システム開発｜自動化">
                 </li>
             </ul>
 
@@ -415,7 +415,7 @@
         </div>
 
         <div class="contactForm">
-            <form action="/index" method="POST" id="contactForm">
+            <form action="{{ url_for('index_page') }}" method="POST" id="contactForm">
                 <label for="contactName">
                     お名前<span class="must">必須</span>
                     <input type="text" name="name" id="contactName" class="contactName" required>
